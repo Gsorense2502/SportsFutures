@@ -21,8 +21,10 @@ from lightmatchingengine.lightmatchingengine import LightMatchingEngine, Side
 lme = LightMatchingEngine()
 Place an order.
 
+
 order, trades = lme.add_order("EUR/USD", 1.10, 1000, Side.BUY)
 Cancel an order.
+
 
 del_order = lme.cancel_order(order.order_id, order.instmt)
 Fill an order.
